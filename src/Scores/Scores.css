@@ -1,0 +1,6 @@
+.scores {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: 1.8rem;
+}

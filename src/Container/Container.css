@@ -1,0 +1,35 @@
+.container_parent {
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(128,128,128,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    padding: clamp(5rem, 5.68vi + 2.73rem, 10rem) 0;
+}
+
+.container_parent .fixed_width {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.container_parent h1,
+.container_parent p {
+    margin: 0;
+}
+
+.container_parent .title_and_scores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container_parent .completed {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container_parent.game_complete .card {
+    pointer-events: none;
+}

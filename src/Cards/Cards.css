@@ -1,0 +1,23 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(1.5rem, 1.7vi + 0.82rem, 3rem);
+}
+
+.card {
+    background-color: #cc0000;
+    border: .2rem solid #ffde00;
+    color: white;
+}
+
+.card img {
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+/* 1000px */
+@media screen and (max-width: 62.5em) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+}
